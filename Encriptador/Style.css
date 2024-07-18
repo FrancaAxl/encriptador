@@ -1,0 +1,119 @@
+/* Reset de margenes y padding */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo del cuerpo de la página */
+body {
+    background-color: #E5E5E5;
+    color: #495057;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo principal */
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+.dev
+{
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+/* Contenedor de contenido */
+.content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Contenedor de texto */
+.text-container {
+    flex: 1;
+    margin-right: 200px;
+}
+
+/* Estilo de texto de la etiqueta h2 */
+.TextoP {
+    color: #0A3871;
+    margin: 20px 0;
+}
+
+/* Estilo del textarea */
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo de los botones */
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #0A3871;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #07426a;
+}
+
+/* Estilo del contenedor de la imagen */
+.img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;  /* Alinear a la derecha */
+}
+
+.img img {
+    max-width: 80%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .img {
+        width: 80%;
+        margin-left: 0;  /* Reseteo de la alineación para pantallas pequeñas */
+    }
+}
+
+
